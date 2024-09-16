@@ -186,10 +186,10 @@ fn ctrl_keybinding(direction: &Direction) -> String {
 fn alt_keybinding(direction: &Direction) -> String {
     let mut char_vec: Vec<char> = vec![0x1b as char];
     char_vec.push(match direction {
-        Direction::Left => 'h',
-        Direction::Right => 'l',
-        Direction::Up => 'k',
-        Direction::Down => 'j',
+        Direction::Left => 'm',
+        Direction::Right => 'i',
+        Direction::Up => 'e',
+        Direction::Down => 'n',
     });
     char_vec.iter().collect()
 }
